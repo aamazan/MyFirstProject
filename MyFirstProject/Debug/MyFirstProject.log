@@ -1,3 +1,3 @@
 ﻿  Source.cpp
-c:\users\zanmadyne\source\repos\myfirstproject\myfirstproject\source.cpp(11): warning C4305: 'initializing': truncation from 'double' to 'float'
-  MyFirstProject.vcxproj -> c:\users\zanmadyne\source\repos\MyFirstProject\Debug\MyFirstProject.exe
+c:\users\zanmadyne\source\repos\myfirstproject\myfirstproject\source.cpp(16): warning C4018: '<': signed/unsigned mismatch
+  MyFirstProject.vcxproj -> C:\Users\zanmadyne\source\repos\MyFirstProject\Debug\MyFirstProject.exe
