@@ -1,3 +1,3 @@
 ﻿  Source.cpp
-c:\users\zanmadyne\source\repos\myfirstproject\myfirstproject\source.cpp(16): warning C4018: '<': signed/unsigned mismatch
-  MyFirstProject.vcxproj -> C:\Users\zanmadyne\source\repos\MyFirstProject\Debug\MyFirstProject.exe
+Source.obj : error LNK2005: "void __cdecl fib(void)" (?fib@@YAXXZ) already defined in fib.obj
+C:\Users\zanmadyne\source\repos\MyFirstProject\Debug\MyFirstProject.exe : fatal error LNK1169: one or more multiply defined symbols found
