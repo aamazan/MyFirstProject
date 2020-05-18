@@ -17,7 +17,7 @@ void fib() {
 			b = temp; // shift b forward in sequence
 		}
 		cout << "" << endl;
-		cout << "Operation completed. Returning to main menu." << endl;
+		cout << "Operation completed. Re5turning to main menu." << endl;
 		cout << "" << endl;
 	}
 	else if (n == 0) {

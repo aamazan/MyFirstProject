@@ -1,3 +1,4 @@
-﻿  Source.cpp
-Source.obj : error LNK2005: "void __cdecl fib(void)" (?fib@@YAXXZ) already defined in fib.obj
-C:\Users\zanmadyne\source\repos\MyFirstProject\Debug\MyFirstProject.exe : fatal error LNK1169: one or more multiply defined symbols found
+﻿  main.cpp
+  fib.cpp
+  Generating Code...
+  MyFirstProject.vcxproj -> C:\Users\zanmadyne\source\repos\MyFirstProject\Debug\MyFirstProject.exe
