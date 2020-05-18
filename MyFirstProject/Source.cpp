@@ -2,22 +2,22 @@
 #include <conio.h>
 #include <string>
 
-// Refresher program to cover functions, operations, etc.
+// Refresher program to cover functions, operations, pointers, classes, etc.
 
 
 
 void fib() {
-	unsigned int n = -1;
+	int n = -1;
 	int a = 0; int b = 1; int temp;
 	std::cout << "Please enter how many values of the Fibonacci Sequence you wish to print." << std::endl;
-	std::cout << "Enter 0 if you wish to exit back to the main menu" << std::endl;
+	std::cout << "Enter 0 if you wish to exit back to the main menu." << std::endl;
 	std::cin >> n;
 	if (n > 0) {
 		for (int i = 0; i < n; i++) {
 			std::cout << a << " ";
-			temp = a + b;
-			a = b;
-			b = temp;
+			temp = a + b; // store sum in temp variable
+			a = b; // shift a forward in sequence
+			b = temp; // shift b forward in sequence
 		}
 		std::cout<< "" <<std::endl;
 		std::cout << "Operation completed. Returning to main menu." << std::endl;
@@ -56,6 +56,6 @@ void main() {
 		}
 	}
 
-	//_getch();
+	//_getch(); // keeping this for use in later code (rather than using pause)
 	return;
 }
