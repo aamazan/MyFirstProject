@@ -1,5 +1,4 @@
-#include <iostream>
-#include <string>
+#include "fib.h"
 using namespace std;
 // Fibonacci Sequence print function
 

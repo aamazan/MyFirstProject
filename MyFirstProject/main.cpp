@@ -2,8 +2,9 @@
 #include <conio.h>
 #include <string>
 #include "fib.h"
+#include "LinkedList.h"
 using namespace std;
-// Refresher program to cover functions, operations, pointers, classes, etc
+// Refresher program to review functions, operations, pointers, classes/structures, etc
 
 void main() {
 
@@ -28,6 +29,5 @@ void main() {
 		}
 	}
 
-	//_getch(); // keeping this for use in later code (rather than using pause)
 	return;
 }
