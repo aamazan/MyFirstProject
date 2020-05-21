@@ -1,9 +1,23 @@
 #include "LinkedList.h"
 using namespace std;
 
-// Member functions for Linked List class
+// Member functions for (doubly) Linked List class
+
+struct node {
+	struct node *next;
+	struct node *prev;
+	string name;
+	int rating;
+};
 
 
+class LinkedList {
+	node *head, *tail;
+	LinkedList() {
+		head = NULL;
+		tail = NULL;
+	}
+	
 
 	void add_node(string m, int r) {
 		node *temp = new node;
@@ -43,4 +57,7 @@ using namespace std;
 			cout << "End of list. Returning to main menu." << endl;
 		}
 	}
+};
+
+
 

@@ -1,23 +1,11 @@
+#ifndef LINKEDLIST_H_INCLUDED // once-only wrapper
+#define LINKEDLIST_H_INCLUDED
+
 #include <iostream>
 #include <string>
 
-struct node {
-	struct node *next;
-	struct node *prev;
-	string name;
-	int rating;
-};
+struct node;
+class LinkedList {};
 
-class LinkedList {
-private:
-	node *head, *tail;
-public:
-	LinkedList() {
-		head = NULL;
-		tail = NULL;
-	}
-};
 
-void add_node(string m, int r);
-void delete_node(string m);
-void print_movies();
+#endif LINKEDLIST_H_INCLUDED

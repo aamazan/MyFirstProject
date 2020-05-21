@@ -9,7 +9,7 @@ using namespace std;
 void main() {
 
 	int num = -1;
-	LinkedList *l = new LinkedList;
+	LinkedList *l = new LinkedList();
 	while (num != 0) {
 		cout << "Please select an option:" << endl;
 		cout << "1: Print N numbers of Fibonacci Sequence" << endl;
