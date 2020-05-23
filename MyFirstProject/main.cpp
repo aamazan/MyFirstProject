@@ -2,18 +2,18 @@
 #include <conio.h>
 #include <string>
 #include "fib.h"
-#include "LinkedList.h"
+#include "DoublyLinkedList.h"
 using namespace std;
 // Refresher program to review functions, operations, pointers, classes/structures, etc
 
 void main() {
 
 	int num = -1;
-	LinkedList *l = new LinkedList();
+	DoublyLinkedList *l = new DoublyLinkedList();
 	while (num != 0) {
 		cout << "Please select an option:" << endl;
 		cout << "1: Print N numbers of Fibonacci Sequence" << endl;
-		cout << "2: Add movies to a LinkedList" << endl;
+		cout << "2: Add movies to a list" << endl;
 		cout << "3: Sort movies" << endl;
 		cout << "4: Delete movies" << endl;
 		cout << "0: Quit" << endl;

@@ -112,12 +112,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="fib.cpp" />
-    <ClCompile Include="LinkedList.cpp" />
+    <ClCompile Include="DoublyLinkedList.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="fib.h" />
-    <ClInclude Include="LinkedList.h" />
+    <ClInclude Include="DoublyLinkedList.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

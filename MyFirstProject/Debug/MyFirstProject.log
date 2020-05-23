@@ -1,7 +1,5 @@
-﻿  LinkedList.cpp
-c:\users\zanmadyne\source\repos\myfirstproject\myfirstproject\linkedlist.cpp(14): error C2011: 'LinkedList': 'class' type redefinition
-  c:\users\zanmadyne\source\repos\myfirstproject\myfirstproject\linkedlist.h(9): note: see declaration of 'LinkedList'
+﻿  DoublyLinkedList.cpp
   Generating Code...
-  Compiling...
+  Skipping... (no relevant changes detected)
   main.cpp
-  Generating Code...
+  MyFirstProject.vcxproj -> C:\Users\zanmadyne\source\repos\MyFirstProject\Debug\MyFirstProject.exe
