@@ -35,9 +35,17 @@ void main() {
 			l->add_node(nam, rat);
 			cout << nam << " added to the list." << endl;
 				break;
-		case 3: break;
-			// need to figure out some basic sorting algs to put here
-		case 4: break;
+		case 3: 
+			// input name of movie
+			// pass to delete function
+			break;
+		case 4: 
+			// take a number from 0-3 for sort, 4 to exit, throw an error and prompt for new input if unexpected
+			// TODO: A-Z sort
+			// TODO: Z-A sort
+			// TODO: Ascending rating
+			// TODO: Descending rating
+			break;
 		case 5: l->print_movies();
 			break;
 		default:
