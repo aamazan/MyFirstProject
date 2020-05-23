@@ -30,7 +30,24 @@ struct node {
 		}
 	};
 
-	void DoublyLinkedList::delete_node() {
+	void DoublyLinkedList::delete_node(string n) {
+		node *tester = new node;
+		tester = head;
+		while (tester->name != n) {
+			if (tester == tail) {
+				cout << "Sorry, that movie isn't in the list. Returning to main menu." << endl;
+				return;
+			}
+			else {
+				tester = tester->next; // iterate through nodes until you find the one to delete
+			}
+		}
+		
+		// deletion procedure
+		tester->prev->next = tester->next;
+		tester->next->prev = tester->prev;
+		delete(tester);
+		return;
 	};
 
 	void DoublyLinkedList::print_movies() {
@@ -43,11 +60,12 @@ struct node {
 		else {
 			current = head;
 			do {
-				cout << current->name << ", rating: " << current->rating << endl;
+				cout << current->name << ", rating: " << current->rating << endl; // TODO: nullptr violation thrown
 				current = current->next;
 			} while (current != tail);
 			cout << "End of list. Returning to main menu." << endl;
 		}
+		return;
 	};
 	
 	
