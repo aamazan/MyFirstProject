@@ -40,11 +40,13 @@ void main() {
 			// pass to delete function
 			break;
 		case 4: 
-			// take a number from 0-3 for sort, 4 to exit, throw an error and prompt for new input if unexpected
-			// TODO: A-Z sort
-			// TODO: Z-A sort
-			// TODO: Ascending rating
-			// TODO: Descending rating
+			// take a number from 0-3 for sort, 4 to exit
+			// TODO: 0 A-Z sort
+			// TODO: 1 Z-A sort
+			// TODO: 2 Ascending rating
+			// TODO: 3 Descending rating
+			// TODO: 4 break;
+			// else throw an error and prompt for new input if unexpected
 			break;
 		case 5: l->print_movies();
 			break;

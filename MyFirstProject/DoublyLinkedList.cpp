@@ -27,8 +27,9 @@ struct node {
 			tail->next = temp;
 			temp->prev = tail;
 			tail = tail->next;
+			tail->next = NULL; // Null at tail for easier counting
 		}
-	};
+	}
 
 	void DoublyLinkedList::delete_node(string n) {
 		node *tester = new node;
@@ -48,7 +49,7 @@ struct node {
 		tester->next->prev = tester->prev;
 		delete(tester);
 		return;
-	};
+	}
 
 	void DoublyLinkedList::print_movies() {
 		node *current = new node;
@@ -64,14 +65,39 @@ struct node {
 				current = current->next;
 			} while (current != tail);
 			cout << "End of list. Returning to main menu." << endl;
+			delete(current);
 		}
 		return;
-	};
-	
-	
-	// minor change for commit
-	
+	}
 
+	int DoublyLinkedList::length() {
+		node *tester = new node;
+		tester = head;
+		int count = 0;
+		if (head == NULL) {
+			cout << "There is nothing in the list." << endl;
+			return 0;
+		}
+		else {
+			while (tester != NULL) {
+				count++;
+				tester = tester->next;
+			}
+			delete(tester);
+			return count;
+		}
 
+	}
+	
+	void DoublyLinkedList::az_sort() {
+	}
+	
+	void DoublyLinkedList::za_sort() {
+	}
+
+	void DoublyLinkedList::up_sort() {
+	}
+	void DoublyLinkedList::down_sort() {
+	}
 
 
