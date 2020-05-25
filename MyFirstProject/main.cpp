@@ -12,7 +12,7 @@ void main() {
 	string nam = "";
 	int rat = 0;;
 
-	DoublyLinkedList *l = new DoublyLinkedList();
+	DoublyLinkedList l = DoublyLinkedList();
 
 	while (num != 0) {
 		cout << "Please select an option:" << endl;
@@ -25,15 +25,20 @@ void main() {
 		cin >> num;
 		switch (num) {
 		case 0: break;
-		case 1: fib(); break;
+		case 1: 
+			fib();
+			cout << endl;
+			break;
 		case 2: 
 			cout << "Please enter the name of the movie: ";
 			cin >> nam;
 			cout << endl;
 			cout << "Please enter the rating for the movie: ";
-			cin >> nam;
-			l->add_node(nam, rat);
+			cin >> rat;
+			l.add_node(nam, rat);
+			cout << endl;
 			cout << nam << " added to the list." << endl;
+			cout << endl;
 				break;
 		case 3: 
 			// input name of movie
@@ -48,7 +53,7 @@ void main() {
 			// TODO: 4 break;
 			// else throw an error and prompt for new input if unexpected
 			break;
-		case 5: l->print_movies();
+		case 5: l.print_movies();
 			break;
 		default:
 			cout << "Error. Please enter one of the options given." << endl;

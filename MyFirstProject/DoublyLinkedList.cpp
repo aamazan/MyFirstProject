@@ -27,7 +27,7 @@ struct node {
 			tail->next = temp;
 			temp->prev = tail;
 			tail = tail->next;
-			tail->next = NULL; // Null at tail for easier counting
+			// tail->next = NULL; // Null at tail for easier counting
 		}
 	}
 
@@ -51,18 +51,18 @@ struct node {
 		return;
 	}
 
-	void DoublyLinkedList::print_movies() {
+	void DoublyLinkedList::print_movies() { // nullptr violation fixed, but it's only printing one movie despite the contents of the DLL
 		node *current = new node;
-		if (head == NULL) {
+		current = head;
+		if (current == NULL) {
 			cout << "There are no movies in the list. Returning to main menu." << endl;
 			delete(current);
 			return;
 		}
 		else {
-			current = head;
 			do {
 				cout << current->name << ", rating: " << current->rating << endl; // TODO: nullptr violation thrown
-				current = current->next;
+				if(current != tail) current = current->next;
 			} while (current != tail);
 			cout << "End of list. Returning to main menu." << endl;
 			delete(current);
@@ -90,14 +90,18 @@ struct node {
 	}
 	
 	void DoublyLinkedList::az_sort() {
+		// quicksort or mergesort here
 	}
 	
 	void DoublyLinkedList::za_sort() {
+		// quicksort or mergesort here
 	}
 
 	void DoublyLinkedList::up_sort() {
+		// quicksort or mergesort here
 	}
 	void DoublyLinkedList::down_sort() {
+		// quicksort or mergesort here
 	}
 
 
