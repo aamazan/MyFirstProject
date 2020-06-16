@@ -61,7 +61,7 @@ struct node {
 		}
 		else {
 			do {
-				cout << current->name << ", rating: " << current->rating << endl; // TODO: nullptr violation thrown
+				cout << current->name << ", rating: " << current->rating << endl; // where nullptr violation was previously thrown
 				if(current != tail) current = current->next;
 			} while (current != tail);
 			cout << "End of list. Returning to main menu." << endl;
@@ -90,18 +90,22 @@ struct node {
 	}
 	
 	void DoublyLinkedList::az_sort() {
-		// quicksort or mergesort here
+		// quicksort variant here
 	}
 	
 	void DoublyLinkedList::za_sort() {
-		// quicksort or mergesort here
+		// quicksort variant here
 	}
 
 	void DoublyLinkedList::up_sort() {
-		// quicksort or mergesort here
+		// quicksort variant here
 	}
 	void DoublyLinkedList::down_sort() {
-		// quicksort or mergesort here
+		// quicksort variant here
+	}
+
+	int DoublyLinkedList::partition(node n, int p, int r){
+		return 0;
 	}
 
 

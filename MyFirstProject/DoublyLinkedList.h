@@ -23,6 +23,7 @@ public:
 	void za_sort();
 	void up_sort();
 	void down_sort();
+	int partition(node n, int p, int r);
 };
 
 #endif 
